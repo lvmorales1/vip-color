@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/vipcolor-logo.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Leafletjs -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/27bed4375c.js" crossorigin="anonymous"></script>
+    <title>VIP Color</title>
+
+</head>
+
+<body style="background-color: #251F21;">
+    <!-- Navbar -->
+    <nav id="navbar" class="sticky-top shadow navbar navbar-expand-lg navbar-light" style="background-color: #02aff3;">
+        <div class="container-fluid">
+
+            <!-- Navbar logo -->
+            <a class="ps-5 ms-5 navbar-brand" href="index.html">
+                <img src="/img/vipcolor-logo.png" alt="Logo VIP color" width="120" height="80">
+            </a>
+
+            <!-- Navbar Items -->
+            <button class="rounded-pill navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="pe-5 me-5 justify-content-end text-end collapse collapse-end navbar-collapse" id="navbarSupportedContent">
+                <ul class="fs-4 navbar-nav">
+                    <li class="ml-auto ms-2 nav-item">
+                        <a class="nav-link active" aria-current="page" href="#servicos"><i class="fa-solid fa-spray-can"></i>&nbsp; Serviços</a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li class="ml-auto ms-2 me-2 nav-item">
+                        <a class="nav-link" href="#contato"><i class="fa-solid fa-headset"></i>&nbsp; Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrousel -->
+    <div id="carouselExampleInterval" class="shadow carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="img/pintura-imagem.jpg" class="d-block w-100" alt="Pintura eletrostática a pó">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/pintura-imagem2.jpg" class="d-block w-100" alt="Pintura eletrostática a pó">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/pintura-imagem3.jpg" class="d-block w-100" alt="Pintura eletrostática a pó">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br>
+
+    <!-- Card -->
+    <div class="m-4 mt-4 shadow card text-center">
+        <div class="card-header">
+             <a class="text-center mb-3" href="index.html">
+                <img src="/img/vipcolor-logo.png" alt="Logo VIP color" width="120" height="80">
+            </a>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title"><b>Tratamento de superfície</b></h5>
+            <p class="card-text">Pinturas técnicas e profissionais eletrostática a pó.</p>
+            <div class="btn-group">
+                <a href="#" class="btn btn-outline-success" ><i class="fa-solid fa-headset"></i>&nbsp; Fale conosco</a>
+                <a href="#" class="btn btn-outline-danger color"><i class="fa-solid fa-map-location-dot"></i>&nbsp; Venha nos visitar</a>
+            </div>  
+            <span id="servicos"></span>
+        </div>
+        
+        <hr class="m-3">
+
+        <!-- Card Corpo -->
+        <div class="mt-5 container card-body rounded" style="background-color: #02AFF3;">
+            <div class="row justify-content-center">
+            <div class="rounded-3 ms-3 card col shadow p-4" style="width: 10cm;">
+                <h3><b>Pintura eletrostática a pó</b></h3>
+                <hr class="m-3">
+                <p class="lh-base card-text text-start">
+                É uma pintura de alta produção com fino acabamento, com revestimento em pó com duas
+                características: Poliéster e Híbrido. As resinas disponíveis proporcionam uma combinação de qualidades fundamentais que
+                são: resistência ao desgaste, durabilidade, corrosão, impacto, ação química. A pintura a pó, diferencia-se da pintura
+                líquida, pelos métodos de aplicação e resistência. A aplicação é feita de uma forma fácil, através de um processo
+                eletrostático, ou seja, a peça fica presa a uma corrente de pólo negativo ou positivo e a pistola de pintura aspira a
+                tinta em pó numa carga contrária, então a tinta é atraída para peça como se fosse um imã.
+                </p>
+            </div>  
+            <div class="col-md-8">
+                <img src="img/pintura-imagem4.jpg" class="rounded img-fluid" alt="...">
+            </div>
+            </div>
+        </div>
+        <div class="container card-body">
+            <div class="d-flex justify-content-center">
+                <div class="col-md-8">
+                    <img src="img/pintura-imagem5.jpg" class="rounded img-fluid" alt="...">
+                </div>
+                <div class="rounded-3 ms-3 card col opacity-70 shadow p-4" style="width: 10cm;">
+                    <h3 id="processocura"><b>Processo de Cura</b></h3>
+                    <hr class="m-3">
+                    <p class="lh-base card-text text-start">
+                        O tempo de cura (quando as peças vão para a estufa) varia de 10 a 15 minutos, a uma temperatura que
+                        também varia entre 150ºC à 200ºC, portanto, o revestimento em pó tanto da base de resina poliéster como híbrido é a
+                        solução ideal para proteção de superfícies metálicas e de alumínio, mesmo sendo as mais complexas.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container card-body rounded" style="background-color: #EF018D;">
+            <div class="row justify-content-center rounded">
+                <div class="rounded-3 ms-3 card col opacity-70 shadow p-4" style="width: 10cm;">
+                    <h3><b>Onde pode ser aplicado?</b></h3>
+                    <hr class="m-3">
+                    <p class="lh-base card-text text-start">
+                        Os revestimentos em pó podem ser aplicados em qualquer superfície metálica como: Esquadrias,
+                        Placas, Perfis de Chapas Dobradas, Grades, Estruturas Espaciais, Tubos de Metal, Estruturas de Ferro ou Alumínio,
+                        Luminárias, Cadeiras, Portões, Chapas de Aço, Utilitários Domésticos, Tubos de Ferro, Perfis, Caixas Metálicas em Geral,
+                        Telhas de Alumínio ou Chapa, Auto-Peças, Eletrodomésticos, Grandes Móveis Metálicos, Implementos Agrícolas, Extintores,
+                        Bicicletas e Metais em geral, proporcionando ótimo acabamento e excelente proteção.
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <img src="img/pintura-imagem6.jpg" class="rounded img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="container card-body">
+            <div class="d-flex justify-content-center">
+                <div class="col-md-8">
+                    <img src="img/pintura-imagem7.jpg" class="rounded img-fluid" alt="...">
+                </div>
+                <div class="rounded-3 ms-3 card col opacity-70 shadow p-4" style="width: 10cm;">
+                    <h3 id="processocura"><b>Acabamento</b></h3>
+                    <hr class="m-3">
+                    <p class="lh-base card-text text-start">
+                        Tintas em pó produzem um acabamento atraente que se caracteriza por uma excelente resistência à corrosão, ao calor,
+                        impacto e extremos de calor ou frio. As possibilidades de coloração e acabamento são ilimitadas, podendo apresentar
+                        acabamentos de alto, médio ou baixo brilho, efeitos metálicos, perolados, transparentes e incolores. Acabamentos
+                        texturizados, microtexturizados e enrugados nos mais diversos brilhos são utilizados para embelezar peças e esconder
+                        pequenas imperfeições, como por exemplo, algumas marcas de fundição. Tintas em pó podem ser formuladas para a aplicação
+                        em baixa ou alta camada, de acordo com a finalidade desejada.
+                    </p>
+                </div>
+            </div>
+    </div>  
+
+    <!-- Mapa -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <div id="map"></div>
+
+    <script>
+       let mapOptions = {
+            center: [-23.44730732305688, -46.362582406629905],
+            zoom: 15
+        }
+
+
+        let map = new L.map('map', mapOptions);
+
+        let layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+        map.addLayer(layer);
+
+        let marker = new L.Marker([-23.44730732305688, -46.362582406629905]);
+        marker.addTo(map);
+    </script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

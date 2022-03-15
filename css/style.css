@@ -1,0 +1,34 @@
+@font-face {
+  font-family: Franklin Gothic;
+  src: url(../fonts/FranklinGothic.ttf);
+}
+@font-face {
+  font-family: Franklin Gothic Heavy;
+  src: url(../fonts/Franklin\ Gothic\ Heavy\ Regular.ttf);
+}
+
+@font-face {
+  font-family: Franklin Gothic SSi;
+  src: url(../fonts/Franklin\ Gothic\ SSi\ Book.ttf);
+}
+
+#navbar {
+  font-family: Franklin Gothic Heavy;
+}
+
+.card {
+  font-family: Franklin Gothic SSi;
+}
+
+b {
+  font-family: Franklin Gothic Heavy;
+}
+
+h3 {
+  font-family: Franklin Gothic Heavy;
+}
+
+#map {
+  width: 100%;
+  height: 50vh;
+}
