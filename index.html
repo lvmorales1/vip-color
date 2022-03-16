@@ -29,7 +29,7 @@
 
 <body style="background-color: #251F21;">
     <!-- Navbar -->
-    <nav id="navbar" class="sticky-top shadow navbar navbar-expand-lg navbar-light" style="background-color: #02aff3;">
+    <nav id="navbar" class="sticky-top shadow navbar navbar-expand-lg navbar-light" style="background-color: #008ECB;">
         <div class="container-fluid">
 
             <!-- Navbar logo -->
@@ -49,49 +49,22 @@
                 <ul class="fs-4 navbar-nav">
                     <li class="ml-auto ms-2 nav-item">
                         <a class="nav-link active" aria-current="page" href="#servicos"><i
-                                class="fa-solid fa-spray-can"></i>&nbsp; Serviços</a>
+                                class="fa-solid fa-spray-can-sparkles"></i>&nbsp; Serviços</a>
                     </li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
                     <li class="ml-auto ms-2 me-2 nav-item">
-                        <a class="nav-link" href="#contato"><i class="fa-solid fa-headset"></i>&nbsp; Contato</a>
+                        <a class="nav-link active" href="#contato"><i class="fa-solid fa-headset"></i>&nbsp; Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <!-- Carrousel -->
-    <div id="carouselExampleInterval" class="shadow carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-                <img src="img/pintura-imagem.jpg" class="d-block w-100" alt="Pintura eletrostática a pó">
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-                <img src="img/pintura-imagem2.jpg" class="d-block w-100" alt="Pintura eletrostática a pó">
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-                <img src="img/pintura-imagem3.jpg" class="d-block w-100" alt="Pintura eletrostática a pó">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <br>
-
     <!-- Card -->
     <div class="m-4 mt-4 shadow card text-center">
         <div class="card-header">
-            <a class="text-center mb-3" href="index.html">
+            <a class="text-center mb-3">
                 <img src="/img/vipcolor-logo.png" alt="Logo VIP color" width="120" height="80">
             </a>
         </div>
@@ -103,13 +76,37 @@
                 <a href="#map" class="btn btn-outline-danger color"><i class="fa-solid fa-map-location-dot"></i>&nbsp;
                     Venha nos visitar</a>
             </div>
-            <span id="servicos"></span>
         </div>
-
-        <hr class="m-3">
-
+        <!-- Carrousel -->
+        <div id="carouselExampleInterval" class="mt-3 shadow carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="img/pintura-imagem.jpg" class="d-block w-100" alt="Pintura eletrostática a pó">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/pintura-imagem2.jpg" class="d-block w-100" alt="Pintura eletrostática a pó">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/pintura-imagem3.jpg" class="d-block w-100" alt="Pintura eletrostática a pó">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/pintura-imagem8.jpg" class="d-block w-100" alt="Pintura eletrostática a pó">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br id="servicos">
         <!-- Card Corpo -->
-        <div class="mt-5 container card-body rounded" style="background-color: #02AFF3;">
+        <div class="mt-5 container card-body rounded" style="background-color: #008ECB;">
             <div class="row justify-content-center">
                 <div class="rounded-3 ms-3 card col shadow p-4" style="width: 10cm;">
                     <h3><b>Pintura eletrostática a pó</b></h3>
@@ -196,15 +193,34 @@
                 </div>
             </div>
         </div>
+        <hr class="m-3">
 
-        <div class="card-header">
-            <a class="text-center mb-3" href="index.html">
+        <!-- Contato -->
+        <div id="contato" class="card-header">
+            <a class="text-center mb-3">
                 <img src="/img/vipcolor-logo.png" alt="Logo VIP color" width="120" height="80">
             </a>
         </div>
-        <div class="card-body">
-            <h5 class="card-title"><b>Lorep Ipsum</b></h5>
-            <p class="card-text">Lorep Ipsum</p>
+        <div class="card-body d-inline-flex">
+            <div>
+                <h5 class="card-title text-start"><i class="fa-solid fa-location-dot"></i> <b>Nossa localização</b>
+                </h5>
+                <p class="card-text text-start">Estr. São Miguel Arcanjo,
+                    140B<br>Veraneio Maracanã<br> Itaquaqucetuba, São
+                    Paulo <br>CEP 085820-500</p>
+            </div>
+            <div class="me-3 text-start position-absolute end-0">
+                <h5 class="card-title"><i class="fa-solid fa-headset"></i> <b>Contato</b>
+                </h5>
+                <p class="card-text"><span class="badge bg-secondary">Gerente
+                        comercial</span> <b>Ivan Almada Neto</b>
+                    <br><i class="bi bi-whatsapp"></i><a class="link-success" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=5511956990150">
+                        (11) 95699-0150</a>
+                    <br><i class="bi bi-envelope"></i><a class="link-dark" href="mailto:vipcolor01@hotmail.com">
+                        vipcolor01@hotmail.com</a>
+                </p>
+            </div>
         </div>
 
         <!-- Mapa -->
@@ -229,6 +245,11 @@
 
             let marker = new L.Marker([-23.44730732305688, -46.362582406629905]);
             marker.addTo(map);
+
+
+            L.marker([-23.44730732305688, -46.362582406629905]).addTo(map)
+                .bindPopup('<h4>Venha visitar a <b>VIP Color</b></h4>')
+                .openPopup();   
         </script>
 
         <!-- Bootstrap -->

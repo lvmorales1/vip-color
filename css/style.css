@@ -2,10 +2,6 @@
   font-family: Franklin Gothic;
   src: url(../fonts/FranklinGothic.ttf);
 }
-@font-face {
-  font-family: Franklin Gothic Heavy;
-  src: url(../fonts/Franklin\ Gothic\ Heavy\ Regular.ttf);
-}
 
 @font-face {
   font-family: Franklin Gothic SSi;
@@ -24,11 +20,26 @@ b {
   font-family: Franklin Gothic Heavy;
 }
 
+h4 {
+  font-family: Franklin Gothic SSi;
+}
+
 h3 {
   font-family: Franklin Gothic Heavy;
+}
+h1 {
+  font-family: Franklin Gothic Heavy;
+}
+
+p {
+  font-family: Franklin Gothic SSi;
 }
 
 #map {
   width: 100%;
   height: 50vh;
+}
+
+.carousel {
+  font-family: Franklin Gothic;
 }
