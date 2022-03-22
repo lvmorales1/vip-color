@@ -27,7 +27,7 @@
 
 </head>
 
-<body style="background-color: #251F21;">
+<body>
     <!-- Navbar -->
     <nav id="navbar" class="sticky-top shadow navbar navbar-expand-lg navbar-light" style="background-color: #008ECB;">
         <div class="container-fluid">
@@ -55,13 +55,18 @@
                         <hr class="dropdown-divider">
                     </li>
                     <li class="ml-auto ms-2 me-2 nav-item">
-                        <a class="nav-link active" href="#contato"><i class="fa-solid fa-headset"></i>&nbsp; Contato</a>
+                        <a class="nav-link" href="contato.html"><i class="fa-solid fa-headset"></i>&nbsp; Contato</a>
+                    </li>
+                    <li class="ml-auto ms-2 me-2 nav-item">
+                        <a class="nav-link" href="sobre.html"><i class="fa-solid fa-circle-info"></i>&nbsp; Sobre
+                            nós</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Card -->
+
     <div class="m-4 mt-4 shadow card text-center">
         <div class="card-header">
             <a class="text-center mb-3">
@@ -72,17 +77,17 @@
             <h5 class="card-title"><b>Tratamento de superfície</b></h5>
             <p class="card-text">Pinturas técnicas e profissionais eletrostática a pó.</p>
             <div class="btn-group">
-                <a href="#contato" class="btn btn-outline-success"><i class="fa-solid fa-headset"></i>&nbsp; Fale
+                <a href="contato.html" class="btn btn-outline-success"><i class="fa-solid fa-headset"></i>&nbsp; Fale
                     conosco</a>
-                <a href="#map" class="btn btn-outline-danger color"><i class="fa-solid fa-map-location-dot"></i>&nbsp;
-                    Venha nos visitar</a>
+                <a href="sobre.html" class="btn btn-outline-danger"><i class="fa-solid fa-circle-info"></i>&nbsp;
+                    Saiba mais </a>
             </div>
         </div>
         <!-- Carrousel -->
         <div id="carouselExampleInterval" class="mt-3 shadow carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="img/pintura-imagem.jpg" class="d-block w-100" alt="Pintura eletrostática a pó">
+                    <img src="img/pintura-imagem.jpeg" class="d-block w-100" alt="Pintura eletrostática a pó">
                 </div>
                 <div class="carousel-item" data-bs-interval="5000">
                     <img src="img/pintura-imagem2.jpg" class="d-block w-100" alt="Pintura eletrostática a pó">
@@ -92,6 +97,9 @@
                 </div>
                 <div class="carousel-item" data-bs-interval="5000">
                     <img src="img/pintura-imagem8.jpg" class="d-block w-100" alt="Pintura eletrostática a pó">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/pintura-imagem7.jpg" class="d-block w-100" alt="Pintura eletrostática a pó">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -194,68 +202,37 @@
                 </div>
             </div>
         </div>
-        <hr class="m-3">
 
-        <!-- Contato -->
-        <div id="contato" class="card-header">
-            <a class="text-center mb-3">
-                <img src="/img/vipcolor-logo.png" alt="Logo VIP color" width="120" height="80">
-            </a>
-        </div>
-        <div class="card-body d-inline-flex">
-            <div>
-                <h5 class="card-title text-start"><i class="fa-solid fa-location-dot"></i> <b>Nossa localização</b>
-                </h5>
-                <p class="card-text text-start">Estr. São Miguel Arcanjo,
-                    140B<br>Veraneio Maracanã<br> Itaquaqucetuba, São
-                    Paulo <br>CEP 085820-500</p>
+        <!-- Botão -->
+        <a href="https://wa.me/5511956990150?text=Gostaria%20de%20contratar%20seu%20serviço." style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+      z-index:1000;" target="_blank">
+            <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+        </a>
+
+        <hr class="m-4">
+
+        <footer class=" m-4 rounded-3">
+            <div class="px-4 pt-5 m-4 text-center">
+                <h1 class="display-4 fw-bold">
+                    <img src="/img/vipcolor-logo.png" alt="Logo VIP color" width="120" height="80">
+                </h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">Cultivamos a ideia de criar dando autonomia para você fazer ajustes de
+                        acordo
+                        com sua necessidade, além de oferecer a opção principal e sustentável, que é remodelar
+                        roupas ou tecidos permitindo reaproveita-las criando novas peças a partir do tecido
+                        que você já possuí, sempre com foco em oferecer um serviço de qualidade,
+                        comodidade e acessível.</p>
+                    <div class="justify-content-sm-center mb-5">
+                        <a href="sobre.html" type="button" class="btn btn-outline-success px-4"><i
+                                class="fas fa-info-circle"></i>&nbsp; Sobre nós</a>
+                    </div>
+                </div>
             </div>
-            <div class="me-3 text-start position-absolute end-0">
-                <h5 class="card-title"><i class="fa-solid fa-headset"></i> <b>Contato</b>
-                </h5>
-                <p class="card-text"><span class="badge bg-secondary">Gerente
-                        comercial</span> <b>Ivan Almada Neto</b>
-                    <br><i class="bi bi-whatsapp"></i><a class="link-success" target="_blank"
-                        href="https://api.whatsapp.com/send?phone=5511956990150">
-                        (11) 95699-0150</a>
-                    <br><i class="bi bi-envelope"></i><a class="link-dark" href="mailto:vipcolor01@hotmail.com">
-                        vipcolor01@hotmail.com</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- Mapa -->
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-            crossorigin=""></script>
-
-        <div class="rounded" id="map"></div>
-
-        <script>
-            let mapOptions = {
-                center: [-23.44730732305688, -46.362582406629905],
-                zoom: 15,
-                scrollWheelZoom: false
-            }
-
-
-            let map = new L.map('map', mapOptions);
-
-            let layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-            map.addLayer(layer);
-
-            let marker = new L.Marker([-23.44730732305688, -46.362582406629905]);
-            marker.addTo(map);
-
-
-            L.marker([-23.44730732305688, -46.362582406629905]).addTo(map)
-                .bindPopup('<h4>Venha visitar a <b>VIP Color</b></h4>')
-                .openPopup();   
-        </script>
+        </footer>
 
         <!-- Bootstrap -->
         <script src="js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 
