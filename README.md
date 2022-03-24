@@ -8,4 +8,4 @@
 
 <h4>Website desenvolvido para um serviço de pintura eletrostática a pó</h4>
 
-<p>Website simples, utilizando <b>Bootstrap</b>, e a API Leaflet, uma biblioteca Open Source JS para mapas interativos.</p>
+<p>Website simples, utilizando <b>Bootstrap</b> e a API Leaflet, uma biblioteca Open Source JS para mapas interativos.</p>
