@@ -64,7 +64,7 @@
         </div>
     </nav>
 
-    <div class="m-4 mt-4 shadow card text-center">
+    <div class="text-center">
 
         <!-- Contato -->
 
@@ -73,63 +73,69 @@
                 <img src="/img/vipcolor-logo.png" alt="Logo VIP color" width="120" height="80">
             </a>
         </div>
-        <div class="card-body d-inline-flex">
-            <div class="ps-4">
-                <h5 class="card-title text-start"><i class="fa-solid fa-location-dot"></i> <b>Nossa localização</b>
-                </h5>
-                <p class="card-text text-start">Estr. São Miguel Arcanjo,
-                    140B<br>Veraneio Maracanã<br> Itaquaqucetuba, São
-                    Paulo <br>CEP 085820-500</p>
-            </div>
-            <div class="pe-4 text-start position-absolute end-0">
-                <h5 class="card-title"><i class="fa-solid fa-headset"></i> <b>Contato</b>
-                </h5>
-                <p class="card-text"><span class="badge bg-secondary">Gerente
-                        comercial</span> <b>Ivan Almada Neto</b>
-                    <br><i class="bi bi-whatsapp"></i><a class="link-success" target="_blank"
-                        href="https://api.whatsapp.com/send?phone=5511956990150">
-                        (11) 95699-0150</a>
-                    <br><i class="bi bi-envelope"></i><a class="link-dark" href="mailto:vipcolor01@hotmail.com">
-                        vipcolor01@hotmail.com</a>
-                </p>
-            </div>
-        </div>
 
-        <!-- Botão -->
-        <a href="https://wa.me/5511956990150?text=Gostaria%20de%20contratar%20seu%20serviço." style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+        <div class="container-fluid">
+            <div class="row">
+                <div class="card-body d-flex">
+                    <div class="col ps-3">
+                        <h5 class="card-title text-start"><i class="fa-solid fa-location-dot"></i> <b>Nossa
+                                localização</b>
+                        </h5>
+                        <p class="card-text text-start">Estr. São Miguel Arcanjo,
+                            140B<br>Veraneio Maracanã<br> Itaquaqucetuba, São
+                            Paulo <br>CEP 085820-500</p>
+                    </div>
+                    <div class="col pe-3 text-end">
+                        <h5 class="card-title"><i class="fa-solid fa-headset"></i> <b>Contato</b>
+                        </h5>
+                        <p class="card-text"><span class="badge bg-secondary">Gerente
+                                comercial</span> <b>Ivan Almada Neto</b>
+                            <br><i class="bi bi-whatsapp"></i><a class="link-success" target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5511956990150">
+                                (11) 95699-0150</a>
+                            <br><i class="bi bi-envelope"></i><a class="link-dark" href="mailto:vipcolor01@hotmail.com">
+                                vipcolor01@hotmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão -->
+            <a href="https://wa.me/5511956990150?text=Gostaria%20de%20contratar%20seu%20serviço." style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
                       z-index:1000;" target="_blank">
-            <i style="margin-top:16px" class="fa fa-whatsapp"></i>
-        </a>
+                <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+            </a>
 
-        <!-- Mapa -->
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-            crossorigin=""></script>
+            <!-- Mapa -->
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                crossorigin=""></script>
 
-        <div class="rounded" id="map"></div>
+            <div class="rounded" id="map"></div>
 
-        <script>
+            <script>
 
-            let mapOptions = {
-                center: [-23.44730732305688, -46.362582406629905],
-                zoom: 15
-            }
-
-
-            let map = new L.map('map', mapOptions);
-
-            let layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-            map.addLayer(layer);
-
-            let marker = new L.Marker([-23.44730732305688, -46.362582406629905]);
-            marker.addTo(map);
+                let mapOptions = {
+                    center: [-23.44730732305688, -46.362582406629905],
+                    zoom: 15
+                }
 
 
-            L.marker([-23.44730732305688, -46.362582406629905]).addTo(map)
-                .bindPopup('<h4>Venha visitar a <b>VIP Color</b></h4>')
-                .openPopup();   
-        </script>
-        <!-- Bootstrap -->
-        <script src="js/bootstrap.bundle.min.js"></script>
+                let map = new L.map('map', mapOptions);
+
+                let layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+                map.addLayer(layer);
+
+                let marker = new L.Marker([-23.44730732305688, -46.362582406629905]);
+                marker.addTo(map);
+
+
+                L.marker([-23.44730732305688, -46.362582406629905]).addTo(map)
+                    .bindPopup('<h4>Venha visitar a <b>VIP Color</b></h4>')
+                    .openPopup();   
+            </script>
+            <!-- Bootstrap -->
+            <script src="js/bootstrap.bundle.min.js"></script>
+        </div>
     </div>
 </body>
